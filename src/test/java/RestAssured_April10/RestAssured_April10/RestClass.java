@@ -33,7 +33,9 @@ public void APITest(String name, double id){
 	Req.header("Content-Type", "application/JSON");
 	Req.body(jb.toJSONString());   ///Request attached to the body 
 	Response Res = Req.post(RestAssured.basePath);
-	Res.body().prettyPrint();		
+	Res.body().prettyPrint();
+	System.out.println("Hello");
+	
 	
 		}
 
